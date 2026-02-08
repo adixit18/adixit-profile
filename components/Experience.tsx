@@ -12,18 +12,17 @@ const Experience: React.FC = () => {
       </div>
 
       <div className="flex flex-col md:flex-row gap-8 md:gap-4">
-        
+
         {/* Tab List */}
-        <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l-2 border-lightest-navy min-w-max md:w-48 scrollbar-hide">
+        <div className="flex md:flex-col overflow-x-auto md:overflow-visible border-b md:border-b-0 md:border-l-2 border-lightest-navy w-full md:w-48 scrollbar-hide shrink-0 pb-px md:pb-0">
           {EXPERIENCES.map((exp, index) => (
             <button
               key={index}
               onClick={() => setActiveTab(index)}
-              className={`px-4 py-3 text-sm font-mono text-left transition-all duration-300 border-b-2 md:border-b-0 md:border-l-2 -mb-[2px] md:-mb-0 md:-ml-[2px] ${
-                activeTab === index 
-                  ? 'text-green border-green bg-light-navy' 
+              className={`px-4 py-3 text-sm font-mono text-left whitespace-nowrap transition-all duration-300 border-b-2 md:border-b-0 md:border-l-2 -mb-[2px] md:-mb-0 md:-ml-[2px] ${activeTab === index
+                  ? 'text-green border-green bg-light-navy'
                   : 'text-slate border-transparent hover:bg-light-navy hover:text-green'
-              }`}
+                }`}
             >
               {exp.company}
             </button>

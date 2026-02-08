@@ -79,6 +79,10 @@ export const SKILLS: SkillCategory[] = [
     skills: ["AWS", "Kubernetes (EKS)", "Docker", "CI/CD Pipelines", "Maven", "Mesos"]
   },
   {
+    title: "AI & Productivity",
+    skills: ["GitHub Copilot", "ChatGPT", "Claude"]
+  },
+  {
     title: "Data & Storage",
     skills: ["PostgreSQL", "MySQL", "Oracle", "InfluxDB", "ElasticSearch", "NoSQL"]
   },
